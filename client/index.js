@@ -95,7 +95,8 @@ function getRtcConfig (cb) {
     timeout: 5000
   }, function (err, res, data) {
     if (err || res.statusCode !== 200) {
-      cb(new Error('Could not get WebRTC config from server. Using default (without TURN).'))
+		//Could not get WebRTC config from server. Using default (without TURN).
+      cb(new Error(''))
     } else {
       var rtcConfig
       try {
